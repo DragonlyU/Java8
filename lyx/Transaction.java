@@ -2,24 +2,29 @@ package lyx;
 
 public class Transaction {
 
-	private int Price;
-
-	private Currency currency;
 	
-	public int getPrice() {
-		return Price;
+	private final Trader trader;
+	private final int year;
+	private final int value;
+	public Transaction(Trader trader, int year, int value) {
+		super();
+		this.trader = trader;
+		this.year = year;
+		this.value = value;
 	}
-
-	public void setPrice(int price) {
-		Price = price;
+	public Trader getTrader() {
+		return trader;
 	}
-
-	public Currency getCurrency() {
-		return currency;
+	public int getYear() {
+		return year;
 	}
-
-	public void setCurrency(Currency currency) {
-		this.currency = currency;
+	public int getValue() {
+		return value;
 	}
+	@Override
+	public String toString() { 
+		return "Transaction [trader=" + trader + ", year=" + year + ", value=" + value + "]";
+	}
+	
 	
 }

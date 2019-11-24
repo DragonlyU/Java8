@@ -1,20 +1,20 @@
 package lyx;
 
-public class Apple implements Fruit{
+public class Orange implements Fruit{
 
 	private String color;
 	private int weight;
 	
 	
-	public Apple() {
+	public Orange() {
 		super();
 	}
-	public Apple(int weight) {
+	public Orange(int weight) {
 		super();
 		this.weight = weight;
 	}
 	
-	public Apple(String color, int weight) {
+	public Orange(String color, int weight) {
 		super();
 		this.color = color;
 		this.weight = weight;
@@ -33,7 +33,7 @@ public class Apple implements Fruit{
 	}
 	@Override
 	public String toString() {
-		return "Apple [color=" + color + ", weight=" + weight + "]";
+		return "Orange [color=" + color + ", weight=" + weight + "]";
 	}
 	
 }
